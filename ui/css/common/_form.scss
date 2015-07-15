@@ -1,0 +1,166 @@
+.form {
+  margin: -89px auto 60px auto;
+}
+
+.popup {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 770px;
+  width: 100%;
+  z-index: 800;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 0 3px rgba(0,0,0,0.1);
+
+  .heading {
+    border-bottom: 1px solid #eff1f4;
+    padding: 25px 15px 28px;
+    text-align: center;
+    position: relative;
+
+    h2 {
+      color: #020202;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 30px;
+      margin: 0 0 11px;
+    }
+
+    span {
+      color: #a1a1a1;
+      font-size: 16px;
+      line-height: 17px;
+      display: block;
+    }
+  }
+
+  .subheading {
+    color: #a1a1a1;
+    font-size: 16px;
+    line-height: 17px;
+  }
+
+  form {
+    padding: 26px 39px 48px;
+  }
+
+  .form-group {
+    margin: 15px auto 20px auto;
+  }
+
+  label {
+    font-size: 18px;
+    line-height: 20px;
+    position: relative;
+    text-align: right;
+    font-weight: normal;
+
+    span {
+      color: #598fef;
+      font: bold 31px/31px Arial,Helvetica,sans-serif;
+      vertical-align: -9px;
+      margin-left: 6px;
+    }
+  }
+
+  input[type=text], input[type=password], input[type=email], select {
+    border: 1px solid #a7a7a7;
+    background: #fff;
+    color: #6d757f;
+    font: 400 16px 'Open Sans',Arial,Helvetica,sans-serif;
+    height: 46px;
+    line-height: 46px;
+    margin: 0;
+    padding: 0;
+    text-indent: 22px;
+    width: 100%;
+    max-width: 358px;
+    border-radius: 3px;
+    box-shadow: 0 0 0 3px #e5eefc;
+    -webkit-box-shadow: 0 0 0 3px #e5eefc;
+    -moz-box-shadow: 0 0 0 3px #e5eefc;
+
+    &:focus {
+      outline: 0;
+      border-color: #3B99FC;
+    }
+  }
+
+  select {
+    height: 46px;
+    text-indent: 12px;
+    padding: 0;
+  }
+
+  input[type=submit] {
+    color: #2a2a2a;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 21px;
+    margin: 18px 0 0 0;
+    text-shadow: 0 -1px 0 #f7f6f6;
+    min-width: 200px;
+    max-width: 100%;
+    padding: 0 25px;
+    width: auto;
+    border: 0;
+    font-family: Arial,Helvetica,sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    &:hover {
+      color: #fff;
+      text-shadow: none;
+    }
+  }
+
+  .checkbox {
+    label {
+      font-size: 14px;
+    }
+  }
+
+  .clicking {
+    color: #909090;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 5px 0;
+
+    &.already {
+      margin-top: 60px;
+      text-align: right;
+    }
+  }
+
+  .helper {
+    color: #686868;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 5px 0 0;
+
+    &.error {
+      color: red;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .popup {
+    .heading {
+      h2 {
+        font-size: 22px;
+      }
+
+      span {
+        font-size: 14px;
+      }
+    }
+
+    form {
+      padding: 26px 18px 48px 20px;
+    }
+  }
+}

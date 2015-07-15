@@ -1,0 +1,89 @@
+div.global-message{
+  display:none;
+}
+
+#we-notification{
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:#eee;
+  border-bottom:2px solid #999;
+  width:100%;
+  display:none;
+  opacity:0.95;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+  filter:alpha(opacity=95);
+  text-align:left;
+  z-index:2;
+  font-size:14px;
+}
+
+#we-notification td{
+  vertical-align: middle;
+}
+
+#we-notification div.main-notice-container{
+  background-color:#ff9;
+  padding:10px;
+}
+
+#we-notification div.main-notice-container span.status-icon{
+  float:left;
+  width:32px;
+  height:32px;
+  background: url("images/icons/notification-status.png") no-repeat top left;
+}
+
+#we-notification div.main-notice-container span.info{
+  background-position:0 0;
+}
+
+#we-notification div.main-notice-container span.warn{
+  background-position:0 -32px;
+}
+
+#we-notification div.main-notice-container span.error{
+  background-position:0 -64px;
+}
+
+#we-notification div.notification-message{
+  margin:10px;
+}
+
+#we-notification div.notification-message p{
+  margin-bottom:5px;
+}
+
+#we-notification div.close{
+  float: right;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 0px 18px 0 0;
+  cursor: pointer;
+}
+
+#we-notification div.close span{
+  position:absolute;
+  background:#ddd;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  border-radius:50px;
+}
+
+#we-notification div.close span b{
+  color: #666;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  text-shadow: 1px 1px #eee;
+  position: absolute;
+  top: 5px;
+  left: 11px;
+}
+
+#we-notification div.close span:hover b{
+  color: #333;
+}

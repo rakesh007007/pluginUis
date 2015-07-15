@@ -1,0 +1,23 @@
+.modal {
+  .close {
+    margin: -9px -7px 0 0;
+
+    .glyphicon {
+      font-size: 28px;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 26px 0 24px 14px;
+  }
+
+  p {
+    font-family: Arial,sans-serif;
+    color: #333;
+    font-size: 13px;
+  }
+}

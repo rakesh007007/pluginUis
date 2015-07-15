@@ -1,0 +1,62 @@
+@import "common/_common";
+@import "common/_select";
+
+$statsBorderColor: #e2e2e2;
+
+.we-stats-in {
+  min-height: 500px;
+  margin-bottom: 60px;
+
+  .panel-body {
+    padding: 0;
+  }
+
+  .panel-heading {
+    border-bottom: 1px solid $statsBorderColor;
+  }
+}
+
+.we-stats {
+  width: 90%;
+  max-width: 960px;
+  margin: 50px auto 30px;
+}
+
+.we-stat {
+  text-align: center;
+  height: 180px;
+  padding: 45px 20px 0;
+  border-right: 1px solid $statsBorderColor;
+
+  & > div {
+    margin-bottom: 12px;
+  }
+}
+
+.we-stat-icon {
+  font-size: 4.2em;
+  color: #BCC6C6;
+}
+
+.we-stat-label {
+  color: #adadad;
+  margin-top: 32px;
+}
+
+.we-stat-number {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.we-stats-title {
+  display: inline-block;
+}
+
+.we-stats-detailed {
+  display: inline-block;
+  float: right;
+
+  &:after {
+    clear: both;
+  }
+}

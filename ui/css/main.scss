@@ -1,0 +1,163 @@
+@import "common/_common";
+@import "common/_select";
+
+.we-raise {
+  background: #363636 url('images/magento/dark-bg.png') repeat;
+}
+
+.we-edit {
+  min-height: 556px;
+}
+
+.we-preview {
+  //box-shadow: inset 8px 3px 8px 0px rgba(0, 0, 0, 0.3), inset 0 -8px 8px 0px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+
+  .we-preview-inactive {
+    display: none;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 120px;
+    text-align: center;
+    color: #F6A3A3;
+  }
+
+  &.inactive {
+    .we-preview-notification {
+      background: rgba(0,0,0,.3) !important;
+      border: 0 !important;
+
+      & > div {
+        display: none;
+      }
+    }
+
+    .we-preview-inactive {
+      display: block !important;
+    }
+  }
+}
+
+.we-preview-scenarios {
+  margin: 40px 0;
+  text-align: center;
+
+  .btn {
+    margin-right: 5px;
+    box-shadow: inset -3px 3px 3px 0 rgba(0,0,0,.5), inset 3px 0 3px 0 rgba(0,0,0,.5);
+    border-color: #222;
+    border-radius: 20px;
+    outline: 0 !important;
+    min-width: 200px;
+
+    &.inactive {
+      opacity: .3;
+      box-shadow: none;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+}
+
+.we-scenario-explanation {
+  padding: 30px 50px 0;
+  color: #999;
+  display: none;
+}
+
+.we-preview-notification {
+  position: relative;
+  width: 580px;
+  height: 340px;
+  margin: 60px auto;
+  padding: 30px;
+  font: 400 14px/18px 'Open Sans', Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.5);
+
+  .we-coupon-and-cta {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 21px;
+  }
+
+  .we-coupon-in {
+    padding: 5px;
+    display: inline-block;
+    min-width: 220px;
+    border-radius: 4px;
+  }
+
+  .we-coupon {
+    border: 2px dashed #fff;
+    padding: 15px 40px;
+  }
+
+  .we-cta {
+    display: inline-block;
+    margin-left: 12px;
+
+    .btn {
+      text-decoration: none;
+      line-height: 49px;
+      min-width: 124px;
+      vertical-align: 0;
+      font-size: 21px;
+    }
+  }
+
+  .we-message {
+    font-size: 26px;
+    line-height: 1.5;
+    font-weight: 600;
+    text-align: center;
+    margin: 30px 0 0;
+    padding: 0 20px;
+  }
+
+  .we-no-thanks-in {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .we-no-thanks {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .theme-specific {
+    display: none;
+  }
+
+  &.theme1 {
+    background: #4BB2B1;
+
+    .we-coupon-in {
+      background: #9DD2D8;
+    }
+
+    .we-message {
+      color: #fff;
+    }
+
+    .show-theme1 {
+      display: block;
+    }
+  }
+
+  &.theme2 {
+    background: #e3ded9;
+    border: 2px solid #fff;
+
+    .we-coupon-in {
+      background: #DBD0C7;
+    }
+
+    .show-theme2 {
+      display: block;
+    }
+  }
+}

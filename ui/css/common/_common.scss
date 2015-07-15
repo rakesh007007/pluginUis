@@ -1,0 +1,222 @@
+//dummy styles start
+
+.magento-header {
+  background: url('images/magento/header.png') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 83px;
+  display: none;
+
+  &.original {
+    background: url('images/magento/header-orig.png') no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.magento-footer {
+  background: url('images/magento/footer.png') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 108px;
+  display: none;
+}
+
+//dummy styles end
+
+body {
+  background: #f1f1f1;
+  font: 400 14px/18px 'Open Sans', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.no-anti-aliasing {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: inherit;
+}
+
+.header {
+  background: #2C3E50;
+}
+
+.header-top {
+  border-bottom: 1px solid #2C3E50;
+}
+
+.animated {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+}
+
+.col-no-padding {
+  padding: 0;
+}
+
+.we-select {
+  display: none;
+}
+
+.we-container {
+  background: #f1f1f1;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  padding-bottom: 56px;
+}
+
+.we-content {
+  padding: 50px 80px;
+}
+
+.we-header {
+  background-color: #2C3E50;
+  height: 130px;
+}
+
+.we-branding {
+  display: inline-block;
+  margin: 32px 0 0 10px;
+  color: #fff;
+  width: 260px;
+}
+
+.we-powered-by-in {
+  display: inline-block;
+  float: right;
+  margin: 20px 32px 0 0;
+  color: #5F6F80;
+
+  .we-powered-by {
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+
+  .we-powered-by-we {
+    font-size: 20px;
+    margin-top: -6px;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.we-logo {
+  background-color: #EAF5FF;
+  border-radius: 50px;
+  padding: 15px 0;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  float: left;
+  margin: 0 10px 10px 0;
+
+  .weicon {
+    font-size: 31px;
+    line-height: 21px;
+    color: #333;
+  }
+}
+
+.we-plugin-name {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.we-license-code {
+  font-size: 11px;
+}
+
+.we-raise {
+  margin-top: -50px;
+  margin-right: 15px;
+  background: #fff;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .3);
+}
+
+.we-menu {
+  padding: 20px 0;
+}
+
+.we-menu-item {
+  display: block;
+  color: #444 !important;
+  text-decoration: none !important;
+  padding: 16px 25px;
+  margin: 8px 0;
+  font-weight: 500;
+
+  & > span {
+    margin-right: 5px;
+    vertical-align: -3px;
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  &.active, &:hover {
+    background: #fafafa;
+  }
+}
+
+.we-edit {
+  background: #fff;
+  height: 100%;
+
+  .form-group {
+    padding: 0 30px;
+    margin: 0 auto 40px;
+    min-height: 55px;
+
+    label {
+      margin-bottom: 0;
+    }
+  }
+
+  .buttons {
+    text-align: center;
+    margin: 40px 0 60px 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .1s ease-in, opacity 0.1s ease-in;
+  }
+
+  .btn {
+    min-width: 120px;
+    margin: 0 4px;
+    outline: 0 !important;
+  }
+}
+
+.we-edit-form {
+  &.modified {
+    .buttons {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &.form-inline {
+    .form-group {
+      padding: 0;
+      margin: 0 !important;
+
+      label {
+        vertical-align: middle;
+        margin-right: 20px;
+      }
+    }
+
+    .buttons {
+      margin-left: 18px !important;
+      display: inline-block;
+    }
+  }
+}
+
+.we-block-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 11px 20px 12px 20px;
+  border-bottom: 1px dotted #ccc;
+}

@@ -1,0 +1,51 @@
+.we-pitch-container {
+  padding: 40px 0 70px 0;
+
+  .pitch {
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .title {
+    font-size: 33px;
+    line-height: 40px;
+    margin: 0 0 9px;
+  }
+
+  .subtitle {
+    color: #a1a1a1;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 0 23px;
+  }
+
+  p {
+    margin: 0 0 39px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .pitch-img {
+    max-width: 251px;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .we-pitch-container {
+    .pitch {
+      font-size: 14px;
+    }
+
+    .title {
+      font-size: 26px;
+    }
+  }
+}
